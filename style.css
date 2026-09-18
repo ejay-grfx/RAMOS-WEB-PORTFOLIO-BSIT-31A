@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+
+    background: #00e913;
+    color: rgb(0, 0, 0);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: #aaa;
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    background: rgb(0, 0, 0);
+}
+
+
+.hero-text {
+    width: 50%;
+}
+
+
+.hello {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+
+.hero-text h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+.hero-text > p {
+    max-width: 550px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    background: #00e913;
+    color: rgb(0, 0, 0);
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background: #333;
+}
+
+
+/* PROFILE IMAGE */
+
+.hero-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-image img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 8px solid #eee;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+
+.section h2 {
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+
+.section-description {
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+/* ACTIVITIES */
+
+.activities-section {
+    background: #000000;
+}
+
+
+.activities-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 45px;
+}
+
+
+/* CARDS */
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ACTIVITY THUMBNAIL */
+
+.card > img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* CARD CONTENT */
+
+.card-content {
+    padding: 25px;
+}
+
+
+.card h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    margin-bottom: 20px;
+
+    color: #555;
+}
+
+
+.card a {
+    color: #111;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: rgb(0, 0, 0);
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #00e913;
+
+    color: rgb(0, 0, 0);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 20px 5%;
+    }
+
+
+    nav ul {
+        gap: 15px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 5%;
+    }
+
+
+    .hero-text {
+        width: 100%;
+    }
+
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .activities-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section {
+        padding: 70px 5%;
+    }
+
+}
