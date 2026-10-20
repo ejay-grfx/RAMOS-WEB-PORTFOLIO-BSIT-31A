@@ -209,6 +209,14 @@ nav ul li a:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
     transition: 0.3s;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
 }
 
 
@@ -236,6 +244,12 @@ nav ul li a:hover {
 
 .card-content {
     padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
 }
 
 
@@ -243,22 +257,28 @@ nav ul li a:hover {
     font-size: 24px;
 
     margin-bottom: 12px;
+
+    color: #000000;
 }
 
 
 .card p {
     margin-bottom: 20px;
 
-    color: #555;
+    color: #111111;
+
+    flex-grow: 1;
 }
 
 
 .card a {
-    color: #111;
+    color: #000000;
 
     font-weight: bold;
 
     text-decoration: none;
+
+    margin-top: auto;
 }
 
 
