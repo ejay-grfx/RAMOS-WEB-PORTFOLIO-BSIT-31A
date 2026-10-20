@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>Ervin James Ramos | Web Development Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +19,7 @@
     <!-- NAVIGATION -->
     <nav>
         <div class="logo">
-            My Portfolio
+            EJAY<span class="accent">GRFX</span>
         </div>
 
         <ul>
@@ -26,33 +31,41 @@
     </nav>
 
 
-    <!-- HOME -->
+    <!-- HOME HERO -->
     <section id="home" class="hero">
 
         <div class="hero-text">
 
-            <p class="hello">Hello, I'm</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Welcome to my portfolio
+            </div>
 
             <h1>Ervin James Ramos</h1>
 
-            <h3>Bachelor of Science in Information Technology Student</h3>
+            <h3 class="subtitle">
+                BSIT Student <span class="divider">•</span> Graphic Designer
+            </h3>
 
             <p>
-                Welcome to my personal portfolio. This website
-                showcases the HTML and CSS activities and projects
-                that I created during our web development class.
+                Welcome to my personal portfolio. This website showcases the HTML, CSS,
+                and JavaScript activities and projects I created during our web development class.
             </p>
 
-            <a href="#activities" class="button">
-                View My Activities
-            </a>
+            <div class="hero-buttons">
+                <a href="#activities" class="button button-primary">
+                    View My Activities →
+                </a>
+                <a href="#contact" class="button button-outline">
+                    Get in Touch
+                </a>
+            </div>
 
         </div>
 
 
         <div class="hero-image">
 
-            <img src="images/ejay.jpeg" alt="My Profile Picture">
+            <img src="images/ejay.jpeg" alt="Ervin James Ramos">
 
         </div>
 
@@ -60,16 +73,32 @@
 
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about" class="section about-section">
 
-        <h2>About Me</h2>
+        <div class="section-header">
+            <span class="section-tag">ABOUT ME</span>
+            <h2>Get To Know Me</h2>
+        </div>
 
-        <p>
-            Hi! I'm Ervin James Ramos, a BSIT student interested in
-            web development and technology. This portfolio
-            contains some of the activities and projects I have
-            created while learning HTML and CSS.
-        </p>
+        <div class="about-card">
+            <p>
+                Hi! I'm <strong>Ervin James Ramos</strong>, a Bachelor of Science in Information Technology
+                (BSIT) student with an interest in web development and graphic design. This portfolio
+                contains the activities and projects I have created while learning front-end web development.
+            </p>
+
+            <div class="skills-wrapper">
+                <span class="skills-title">Skills & Technologies</span>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Flexbox & Grid</span>
+                    <span class="skill-tag">Graphic Design</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -77,12 +106,13 @@
     <!-- ACTIVITIES -->
     <section id="activities" class="section activities-section">
 
-        <h2>My Activities</h2>
-
-        <p class="section-description">
-            Here are some of the activities I created for our
-            Web Development subject.
-        </p>
+        <div class="section-header">
+            <span class="section-tag">WORKS & PROJECTS</span>
+            <h2>My Activities</h2>
+            <p class="section-description">
+                Here are the laboratory activities and projects I created for our Web Development subject.
+            </p>
+        </div>
 
 
         <div class="activities-container">
@@ -91,10 +121,13 @@
             <!-- ACTIVITY 1 -->
             <div class="card" onclick="window.location.href='activities/activity1/RamosAct1.html'">
 
-                <img src="images/activity1.png.png"
-                     alt="Activity 1">
+                <div class="card-img-wrap">
+                    <img src="images/activity1.png.png" alt="Activity 1">
+                </div>
 
                 <div class="card-content">
+
+                    <span class="card-category">HTML & CSS</span>
 
                     <h3>Activity 1</h3>
 
@@ -102,9 +135,11 @@
                         A personal website demonstrating semantic HTML, CSS styling, flexbox, forms, and tables.
                     </p>
 
-                    <a href="activities/activity1/RamosAct1.html">
-                        View Activity →
-                    </a>
+                    <div class="card-footer">
+                        <a href="activities/activity1/RamosAct1.html" class="card-link">
+                            View Activity <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -114,10 +149,13 @@
             <!-- ACTIVITY 3 -->
             <div class="card" onclick="window.location.href='activities/activity3/index.html'">
 
-                <img src="images/activity3.png.png"
-                     alt="Activity 3">
+                <div class="card-img-wrap">
+                    <img src="images/activity3.png.png" alt="Activity 3">
+                </div>
 
                 <div class="card-content">
+
+                    <span class="card-category">HTML & CSS</span>
 
                     <h3>Activity 3</h3>
 
@@ -125,9 +163,11 @@
                         A personal website created using HTML and CSS with basic navigation and page structure.
                     </p>
 
-                    <a href="activities/activity3/index.html">
-                        View Activity →
-                    </a>
+                    <div class="card-footer">
+                        <a href="activities/activity3/index.html" class="card-link">
+                            View Activity <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -137,10 +177,13 @@
             <!-- ACTIVITY 4 -->
             <div class="card" onclick="window.location.href='activities/activity4/index.html'">
 
-                <img src="images/activity4.png.png"
-                     alt="Activity 4">
+                <div class="card-img-wrap">
+                    <img src="images/activity4.png.png" alt="Activity 4">
+                </div>
 
                 <div class="card-content">
+
+                    <span class="card-category">HTML & CSS</span>
 
                     <h3>Activity 4</h3>
 
@@ -148,9 +191,11 @@
                         A student grade report website featuring HTML structure, navigation, and a simple grade table.
                     </p>
 
-                    <a href="activities/activity4/index.html">
-                        View Activity →
-                    </a>
+                    <div class="card-footer">
+                        <a href="activities/activity4/index.html" class="card-link">
+                            View Activity <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -160,10 +205,13 @@
             <!-- ACTIVITY 5 -->
             <div class="card" onclick="window.location.href='activities/activity5/index.html'">
 
-                <img src="images/activity5.png.png"
-                     alt="Activity 5">
+                <div class="card-img-wrap">
+                    <img src="images/activity5.png.png" alt="Activity 5">
+                </div>
 
                 <div class="card-content">
+
+                    <span class="card-category">HTML & CSS</span>
 
                     <h3>Activity 5</h3>
 
@@ -171,9 +219,11 @@
                         A simple landing page created using HTML and CSS with a clean and modern layout.
                     </p>
 
-                    <a href="activities/activity5/index.html">
-                        View Activity →
-                    </a>
+                    <div class="card-footer">
+                        <a href="activities/activity5/index.html" class="card-link">
+                            View Activity <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -183,10 +233,13 @@
             <!-- FINALS ACTIVITY 1 -->
             <div class="card" onclick="window.location.href='activities/FinalsAct1/index.html'">
 
-                <img src="images/FINALSACT1.png"
-                     alt="Finals Activity 1">
+                <div class="card-img-wrap">
+                    <img src="images/FINALSACT1.png" alt="Finals Activity 1">
+                </div>
 
                 <div class="card-content">
+
+                    <span class="card-category js-tag">JavaScript DOM</span>
 
                     <h3>Finals Act 1</h3>
 
@@ -194,9 +247,11 @@
                         An interactive graphic designer card featuring JavaScript event listeners, input binding, and button actions.
                     </p>
 
-                    <a href="activities/FinalsAct1/index.html">
-                        View Activity →
-                    </a>
+                    <div class="card-footer">
+                        <a href="activities/FinalsAct1/index.html" class="card-link">
+                            View Activity <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -206,10 +261,13 @@
             <!-- FINALS ACTIVITY 2 -->
             <div class="card" onclick="window.location.href='activities/FinalsAct2/index.html'">
 
-                <img src="images/FINALSACT2.png"
-                     alt="Finals Activity 2">
+                <div class="card-img-wrap">
+                    <img src="images/FINALSACT2.png" alt="Finals Activity 2">
+                </div>
 
                 <div class="card-content">
+
+                    <span class="card-category js-tag">Async JS & Promises</span>
 
                     <h3>Finals Act 2</h3>
 
@@ -217,9 +275,11 @@
                         An asynchronous JavaScript simulation demonstrating promises, chained operations, and Promise.all loading.
                     </p>
 
-                    <a href="activities/FinalsAct2/index.html">
-                        View Activity →
-                    </a>
+                    <div class="card-footer">
+                        <a href="activities/FinalsAct2/index.html" class="card-link">
+                            View Activity <span>→</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -232,12 +292,35 @@
 
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact-section">
 
-        <h2>Contact</h2>
+        <div class="section-header">
+            <span class="section-tag">CONTACT</span>
+            <h2>Let's Connect</h2>
+            <p class="section-description">
+                Feel free to reach out for questions, feedback, or collaborations.
+            </p>
+        </div>
 
-        <p>Email: ejaygrfx@gmail.com</p>
-        <p>Facebook: Ervin James Ramos</p>
+        <div class="contact-grid">
+
+            <a href="mailto:ejaygrfx@gmail.com" class="contact-card">
+                <div class="contact-icon">✉</div>
+                <div class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-val">ejaygrfx@gmail.com</span>
+                </div>
+            </a>
+
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-icon">💬</div>
+                <div class="contact-info">
+                    <span class="contact-label">Facebook</span>
+                    <span class="contact-val">Ervin James Ramos</span>
+                </div>
+            </a>
+
+        </div>
 
     </section>
 
@@ -245,8 +328,11 @@
     <!-- FOOTER -->
     <footer>
 
-        <p>
-            © 2026 EJAYGRFX. All Rights Reserved.
+        <p class="copyright">
+            © 2026 <strong>EJAYGRFX</strong>. All Rights Reserved.
+        </p>
+        <p class="footer-sub">
+            Bachelor of Science in Information Technology • Web Development
         </p>
 
     </footer>
