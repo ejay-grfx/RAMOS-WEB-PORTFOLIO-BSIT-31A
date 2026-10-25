@@ -131,29 +131,29 @@ nav ul li a:hover::after {
 }
 
 .hero-welcome {
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: -0.8px;
-    line-height: 1.2;
-    color: var(--accent);
-    margin-bottom: 8px;
-    text-shadow: 0 0 25px rgba(0, 229, 117, 0.35);
-}
-
-.hero-text h1 {
-    font-size: 54px;
+    font-size: 58px;
     font-weight: 800;
     letter-spacing: -1.5px;
-    line-height: 1.15;
-    color: var(--text-title);
+    line-height: 1.1;
+    color: var(--accent);
     margin-bottom: 14px;
+    text-shadow: 0 0 35px rgba(0, 229, 117, 0.4);
+}
+
+.hero-name {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    color: var(--text-title);
+    margin-bottom: 12px;
 }
 
 .hero-text .subtitle {
     font-size: 20px;
     font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 20px;
+    color: var(--text-muted);
+    margin-bottom: 22px;
 }
 
 .hero-text .subtitle .divider {
@@ -595,11 +595,11 @@ footer .footer-sub {
     }
 
     .hero-welcome {
-        font-size: 28px;
+        font-size: 44px;
     }
 
-    .hero-text h1 {
-        font-size: 44px;
+    .hero-name {
+        font-size: 30px;
     }
 
     .hero-text > p {
@@ -645,11 +645,11 @@ footer .footer-sub {
     }
 
     .hero-welcome {
-        font-size: 22px;
+        font-size: 34px;
     }
 
-    .hero-text h1 {
-        font-size: 36px;
+    .hero-name {
+        font-size: 24px;
     }
 
     .about-card {
