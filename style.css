@@ -130,26 +130,12 @@ nav ul li a:hover::after {
     width: 55%;
 }
 
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 6px 14px;
-    border-radius: var(--radius-full);
-    background: var(--accent-soft);
-    border: 1px solid var(--accent-border);
+.hero-welcome {
+    font-size: 22px;
+    font-weight: 700;
     color: var(--accent);
-    margin-bottom: 20px;
-}
-
-.badge-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--accent);
-    border-radius: 50%;
-    box-shadow: 0 0 8px var(--accent);
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
 }
 
 .hero-text h1 {
@@ -650,6 +636,10 @@ footer .footer-sub {
 
     .section {
         padding: 70px 6%;
+    }
+
+    .hero-welcome {
+        font-size: 18px;
     }
 
     .hero-text h1 {
