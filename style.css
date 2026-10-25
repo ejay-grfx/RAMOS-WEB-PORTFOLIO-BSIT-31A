@@ -131,11 +131,13 @@ nav ul li a:hover::after {
 }
 
 .hero-welcome {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
     color: var(--accent);
-    margin-bottom: 12px;
-    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 25px rgba(0, 229, 117, 0.35);
 }
 
 .hero-text h1 {
@@ -592,6 +594,10 @@ footer .footer-sub {
         width: 100%;
     }
 
+    .hero-welcome {
+        font-size: 28px;
+    }
+
     .hero-text h1 {
         font-size: 44px;
     }
@@ -639,7 +645,7 @@ footer .footer-sub {
     }
 
     .hero-welcome {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .hero-text h1 {
